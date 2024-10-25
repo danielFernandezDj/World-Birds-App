@@ -1,5 +1,5 @@
 # World Birds
-## Link [Link Text](https://danielfernandezdj.github.io/World-Birds-App/canary.html)
+## [Live Website](https://danielfernandezdj.github.io/World-Birds-App/canary.html)
 ### Technologies Used:
 #### • SASS
 #### • CSS
