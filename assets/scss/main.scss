@@ -1,0 +1,127 @@
+$back-ground: #daf3f2;
+$primary-color: #212f3c;
+$link-color: rgb(186, 236, 110);
+
+// Start ------------------------------------------
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $primary-color;
+}
+
+body {
+  background-color: $back-ground;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0 24px 0;
+  padding: 1rem;
+}
+
+// Navigation Bar Style ------------------------------------------
+nav {
+  width: 60%;
+  margin: auto;
+  margin-top: 12px;
+  padding: 12px 0 12px 0;
+  background: $primary-color;
+  text-align: center;
+  border-radius: 16px;
+
+  h1 {
+    color: $link-color;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      background-color: $link-color;
+      margin: 0 1rem 0 1rem;
+      width: 30%;
+      height: 2px;
+    }
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+  }
+
+  li {
+    display: inline;
+    margin-right: 24px;
+  }
+
+  a {
+    color: $back-ground;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
+
+// Boxes -------------------------------------
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 50%;
+
+  h2 {
+    border-bottom: 2px solid rgb(0, 140, 255);
+    padding-bottom: 0.3rem;
+  }
+
+  img {
+    max-width: 80%;
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+
+  p {
+    margin: 0.5rem;
+    text-indent: 3px;
+  }
+
+  p::first-letter {
+    -webkit-initial-letter: 2;
+    initial-letter: 2; /* Initial letter occupies 2 lines */
+  }
+
+  audio {
+    position: relative;
+    bottom: 6rem;
+    width: 70%;
+  }
+
+  iframe {
+    border: 2px solid $link-color;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 80%;
+    height: 200px;
+    transition: height 400ms;
+  }
+
+  iframe:hover {
+    height: 320px;
+  }
+}
+
+.footerDiv {
+  padding-bottom: 15rem;
+}
